@@ -1,0 +1,212 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:gray;
+}
+
+header {
+    background-color:white;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+section {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+}
+
+input,
+button {
+    margin-top: 10px;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    section {
+        margin: 10px;
+    }
+}
+
+
+
+/* Awareness Section Styles */
+#awareness-section {
+    background-color: #17a2b8;
+    color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+
+/* Gradient Backgrounds for Sections */
+#awareness-section {
+    background: linear-gradient(to right, #17a2b8, #28a745);
+    color: #fff;
+    padding: 40px;
+  
+}
+/* ... (previous code) ... */
+
+/* Guideline Section Styles */
+#recycling-section {
+    background: linear-gradient(to bottom, #17a2b8, #28a745  );
+    color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+}
+/* Resources Section Styles */
+#resources-section {
+    background: linear-gradient(to right, #17a2b8, #28a745);
+    color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+#resources-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#resources-section li {
+    margin-bottom: 10px;
+}
+
+#resources-section a {
+    color: #fff;
+    text-decoration: underline;
+}
+/* Hero Section Styles */
+.hero-section {
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('waste-management-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    animation: fadeInUp 1s ease-in-out, scaleIn 1s ease-in-out; /* Animations for fade in and scale in */
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scaleIn {
+    0% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+/* Recycling Guidelines Styles */
+.guideline-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out; /* Add transition for smooth hover effect */
+}
+
+.guideline-item:hover {
+    transform: scale(1.05);
+}
+/* Tips Section Styles */
+#tips-section {
+    background: linear-gradient(to right, #17a2b8, #28a745);
+    color: black;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.tip-item {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+}
+
+.tip-item h3 {
+    color: #28a745;
+}
+/* Resources Section Styles */
+#resources-section {
+    background: linear-gradient(to right, #17a2b8, #28a745);
+    color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+#resources-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#resources-section li {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #fff; /* Add borders between resource links */
+    padding-bottom: 5px;
+}
+
+#resources-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out; /* Add transition for smooth color change on hover */
+}
+
+#resources-section a:hover {
+    color: #ffc107; /* Change color on hover */
+}
+
+/* Recycling Guidelines Styles */
+.guideline-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Add transitions */
+}
+
+.guideline-item:hover {
+    transform: scale(1.05) translateY(-5px); /* Scale up and move up slightly on hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow on hover for depth */
+}
+

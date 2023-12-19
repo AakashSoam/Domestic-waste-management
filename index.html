@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domestic Waste Management</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+	<link rel="stylesheet" href="new.css">
+
+
+
+<body>
+
+    <header class="bg-dark text-white text-center py-4">
+        <h1>Domestic Waste Management</h1>
+    </header>
+
+    <section id="schedule-section" class="container my-4">
+	
+        <h2 class="text-center mb-4">Waste Collection Schedule</h2>
+        <p class="text-center">Please Choose Schedule</p>
+        <button class="btn btn-success btn-lg d-block mx-auto" onclick="schedulePickup()">Schedule Pickup</button>
+    </section>
+
+
+
+<section id="recycling-section" class="container my-4 text-center">
+    <h2 class="mb-4">Recycling Guidelines</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="guideline-item">
+                <h3>Plastics</h3>
+                <p>Dispose of plastic bottles, containers, and packaging in the designated recycling bin. Make sure to rinse them before recycling.</p>
+                <p>Items like plastic bags and wraps can be taken to local grocery store recycling bins.</p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="guideline-item">
+                <h3>Paper</h3>
+                <p>Recycle newspapers, magazines, office paper, and cardboard. Flatten cardboard boxes before recycling.</p>
+                <p>Avoid recycling paper products contaminated with food or liquids.</p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="guideline-item">
+                <h3>Glass</h3>
+                <p>Recycle glass bottles and jars. Rinse them thoroughly to remove any residues.</p>
+                <p>Do not include broken glass, drinking glasses, or ceramics in the glass recycling bin.</p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="guideline-item">
+                <h3>Metal</h3>
+                <p>Recycle aluminum cans, steel cans, and clean aluminum foil. Rinse them to remove any remaining substances.</p>
+                <p>Avoid putting metal items with food residue in the recycling bin.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ... (remaining code) ... -->
+
+<section id="nearest-garage-section" class="container my-4">
+    <h2 class="text-center mb-4">Find Nearest Garbage Collection Point</h2>
+    <button class="btn btn-primary btn-lg d-block mx-auto" onclick="findNearestGarage()">Find Nearest Garage</button>
+</section>
+
+<!-- ... (remaining code) ... -->
+
+	
+
+    <section id="signup-section" class="container my-4">
+        <h2 class="text-center mb-4">Sign Up for Waste Management Services</h2>
+        <form>
+            <div class="form-group">
+                <label for="fullName">Full Name:</label>
+                <input type="text" class="form-control" id="fullName" placeholder="Enter your full name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
+        </form>
+    </section>
+	<!-- ... (previous code) ... --><!-- ... (previous code) ... -->
+
+<section id="awareness-section" class="container my-4 text-center">
+    <h2 class="mb-4">Environmental Awareness</h2>
+    <p class="lead">"The Earth does not belong to us: we belong to the Earth."</p>
+    <p>Let's raise awareness and take responsibility for our planet.</p>
+</section>
+
+<!-- ... (remaining code) ... -->
+
+	
+
+<section id="contact-section" class="container my-4">
+    <h2 class="text-center mb-4">Contact Us</h2>
+    <form id="contact-form">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="contactName">Your Name:</label>
+                <input type="text" class="form-control" id="contactName" placeholder="Enter your name">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="contactEmail">Your Email:</label>
+                <input type="email" class="form-control" id="contactEmail" placeholder="Enter your email">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="contactMessage">Message:</label>
+            <textarea class="form-control" id="contactMessage" rows="4" placeholder="Type your message here"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</section>
+
+<section id="complaint-section" class="container my-4">
+    <h2 class="text-center mb-4">Complaint Box</h2>
+    <form id="complaint-form">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="complaintName">Your Name:</label>
+                <input type="text" class="form-control" id="complaintName" placeholder="Enter your name">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="complaintEmail">Your Email:</label>
+                <input type="email" class="form-control" id="complaintEmail" placeholder="Enter your email">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="complaintDescription">Description:</label>
+            <textarea class="form-control" id="complaintDescription" rows="4" placeholder="Describe your complaint"></textarea>
+        </div>
+        <button type="submit" class="btn btn-danger">Submit Complaint</button>
+    </form>
+</section><!-- ... (previous code) ... -->
+
+<section id="feedback-section" class="container my-4">
+    <h2 class="text-center mb-4">Feedback</h2>
+    <form id="feedbackForm">
+        <div class="form-group">
+            <label for="feedbackName">Your Name:</label>
+            <input type="text" class="form-control" id="feedbackName" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+            <label for="feedbackMessage">Your Feedback:</label>
+            <textarea class="form-control" id="feedbackMessage" rows="4" placeholder="Enter your feedback" required></textarea>
+        </div>
+        <button type="button" class="btn btn-primary" onclick="submitFeedback()">Submit Feedback</button>
+    </form>
+</section>
+<section id="tips-section" class="container my-4">
+    <h2 class="text-center mb-4">Eco-Friendly Tips</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="tip-item">
+                <h3>Reduce Single-Use Plastics</h3>
+                <p>Opt for reusable water bottles, bags, and containers to minimize single-use plastics in your daily life.</p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="tip-item">
+                <h3>Compost Kitchen Scraps</h3>
+                <p>Create nutrient-rich compost from fruit and vegetable scraps to enrich your garden soil.</p>
+            </div>
+        </div>
+        <!-- Add more tip items as needed -->
+    </div>
+</section>
+
+<footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2023 Domestic Waste Management. </p>
+	   <p> All rights reserved.</p>
+</footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="script.js"></script>
+	
+</body>
+</html>
